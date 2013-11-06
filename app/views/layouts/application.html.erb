@@ -6,9 +6,14 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-  <body style="background-color:lightblue">
-     <!-- Static navbar -->
-    <div class="navbar navbar-default navbar-static-top">
+
+  <body>
+    <body style="background-color:lightgray">
+
+   <!-- <div class="container">-->
+
+     <!-- <div class="masthead"> -->
+      <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -16,48 +21,57 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="miniupload.herokuapp.com">MiniUpload</a>
+          <a class="navbar-brand" href="#">MiniUpload</a>
         </div>
-        <div class="navbar-collapse collapse">
+        <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Inicio</a></li>
-            <li><a href="#about">Acerca de...</a></li>
-            <li><a href="#contact">Contáctanos</a></li>
-            <li class="dropdown">
-              <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>-->
+           <li class="active"><a href="http://miniupload.herokuapp.com/">Home</a></li>
+           <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="http://miniupload.herokuapp.com/uploads/">Uploads</a></li>
+          <li><a href="http://miniupload.herokuapp.com/users/">Sign UP</a></li>
+          <li><a href="#">Sing IN</a></li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Sign In</a></li>
-            <li><a href="users">Sign Up</a></li>
-            <li class="active"><a href="javascript:self.close()">Cerrar</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-    
-    <div class="container">
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </div><!-- /.navbar -->
+       
 
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <%= yield %>
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-        </p>
+
+      <!-- Jumbotron -->
+      <%= yield %>
+      
+    <!--  <div class="jumbotron">
+        <h1>Marketing stuff!</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+        <p><a class="btn btn-lg btn-success" href="http://miniupload.herokuapp.com/users" role="button">SIGN UP</a></p>
+      </div>
+
+      <!-- Example row of columns -->
+    <!--  <div class="row">
+        <div class="col-lg-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-lg-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <!-- Site footer -->
+      <div class="footer">
+        <p align=center>&copy; Anonymous community 2013</p>
       </div>
 
     </div> <!-- /container -->
-       
     
     
     
