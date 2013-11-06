@@ -10,5 +10,6 @@ class CreateUploads < ActiveRecord::Migration
       t.references :user
       
     end
+    add_attachment :uploads, :file
   end
 end
