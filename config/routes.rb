@@ -1,7 +1,11 @@
 Miniupload::Application.routes.draw do
+  get "sessions/new"
+  get 'registro' => 'users#new', :as => 'registro' #registro_path
   resources :users
 
   resources :uploads
+  
+  resources :sessions
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

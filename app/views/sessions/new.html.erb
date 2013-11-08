@@ -1,0 +1,29 @@
+<h1>Iniciar Sesion</h1>
+
+<%= form_tag sessions_path do %>
+  <p>
+    <%= label_tag :username %><br />
+    <%= text_field_tag :username, params[:username] %>
+  </p>
+  <p>
+    <%= label_tag :password %><br />
+    <%= password_field_tag :password %>
+  </p>
+  <p class="button"><%= submit_tag %></p>
+<% end %>
+
+
+
+<h1>Este es otro intento XD</h1>
+<%= form_for(@user) do |f| %>
+  <div class="field">
+    <%= f.label :username %><br>
+    <%= f.text_field :username %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br>
+    <%= f.text_field :password %>
+  </div>
+  <%= f.submit %>
+<% end %>

@@ -34,6 +34,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 # esta es la gema del archivo tipo file
+#gem 'paperclip', git: 'git://github.com/thoughtbot/paperclip.git'
 gem "paperclip", "~>3.0"
 
 group :doc do
@@ -42,7 +43,7 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0', :require => 'bcrypt'
 
 # Use unicorn as the app server
 # gem 'unicorn'

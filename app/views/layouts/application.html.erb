@@ -28,15 +28,17 @@
            <li class="active"><a href="http://miniupload.herokuapp.com/">Home</a></li>
            <li><a href="#">About Us</a></li>
           <li><a href="#">Contact Us</a></li>
-          <li><a href="http://miniupload.herokuapp.com/uploads/">Uploads</a></li>
-          <li><a href="http://miniupload.herokuapp.com/users/">Sign UP</a></li>
+            <li><a href="/uploads">Uploads</a></li>
+          <li><a href="/users/">Sign UP</a></li>
           <li><a href="#">Sing IN</a></li>
           </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
     </div><!-- /.navbar -->
        
-
+      <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, :id => "flash#{name}" %>
+      <%end%>
 
       <!-- Jumbotron -->
       <%= yield %>
