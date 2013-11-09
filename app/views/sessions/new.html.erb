@@ -12,18 +12,3 @@
   <p class="button"><%= submit_tag %></p>
 <% end %>
 
-
-
-<h1>Este es otro intento XD</h1>
-<%= form_for(@user) do |f| %>
-  <div class="field">
-    <%= f.label :username %><br>
-    <%= f.text_field :username %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br>
-    <%= f.text_field :password %>
-  </div>
-  <%= f.submit %>
-<% end %>

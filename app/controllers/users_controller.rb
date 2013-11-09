@@ -74,7 +74,7 @@ class UsersController < ApplicationController
     end
   
   def login_required
-    if session[user_id] == nil
+    if session[:user_id] == nil
       flash[:error] = "Necesita iniciar sesión"
       redirect_to new_session_path
     end
