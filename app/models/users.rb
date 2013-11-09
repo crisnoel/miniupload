@@ -1,5 +1,5 @@
 class Users < ActiveRecord::Base
-  attr_accesor :password
+  attr_accessor :password
   before_save :encrypt_password
   has_many :uploads
   has_many :rates
