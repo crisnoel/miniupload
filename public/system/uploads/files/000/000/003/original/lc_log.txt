@@ -1,0 +1,10 @@
+18-feb-2013
+
+se crea la imagen revisión num: win7 64b r10 18_02_13
+nota: se carga sin sysprep
+se agrrega:
+jmonkey
+gns3
+parches plataforma
+autocad 2010 64b
+actualizaciones windows y antivirus
