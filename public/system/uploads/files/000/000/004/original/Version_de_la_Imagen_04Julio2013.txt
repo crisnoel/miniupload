@@ -1,0 +1,12 @@
+modificaciones 04Julio2013
+
+- NX 8.5
+- Actualización de Java
+- Act. Java Chrome Install 7u25
+- Actualización de AdobeReader 10.1.7
+- Actualización de NX6 a NX 8.5
+- Instalación de PlantSimulation, Jack y FactoryCAD
+- Instalación de kaspersky
+
+
+
