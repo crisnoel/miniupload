@@ -1,5 +1,6 @@
 class UploadsController < ApplicationController
   before_action :set_upload, only: [:show, :edit, :update, :destroy]
+  before_filter :login_required
 
   # GET /uploads
   # GET /uploads.json
@@ -58,6 +59,12 @@ class UploadsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to uploads_url }
       format.json { head :no_content }
+    end
+  end
+  def login_required
+    if session[:user_id] == nil
+      flash[:error] = "Necesita iniciar sesión"
+      redirect_to new_session_path
     end
   end
 

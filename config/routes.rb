@@ -1,4 +1,7 @@
 Miniupload::Application.routes.draw do
+  resources :comments
+
+  get 'sessions/delete'
   get "sessions/new"
   get 'registro' => 'users#new', :as => 'registro' #registro_path
   resources :users

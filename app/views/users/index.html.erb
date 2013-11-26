@@ -1,22 +1,14 @@
-<br>
-<br>
-<br>
-<br>
-<br>
-<h1>Listing users</h1>
-
-<table>
+<div class="jumbotron">
+  <h1 ALIGN=center>Listing Users</h1><br>
+  <p ALIGN=center><a class="btn btn-lg btn-success" href="/users/new" role="button">New User</a></p>
+  <br>
+  <table align="center" width="60%" height="100%">
   <thead>
     <tr>
-      <th>Username</th>
-      <th>Email</th>
-      <th>Password</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th align="center" valign="center"><p class="lead" ALIGN=center>UserName</p></th>
+      <th align="center" valign="center"><p class="lead" ALIGN=center>E-Mail</p></th>
     </tr>
   </thead>
-
   <tbody>
     <% @users.each do |user| %>
       <tr>
@@ -29,7 +21,4 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New User', new_user_path %>
+</div>

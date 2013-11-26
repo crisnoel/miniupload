@@ -1,28 +1,24 @@
+<div class="jumbotron">
+  <h1 ALIGN=center>Welcome to MINIUPLOAD</h1>
+  <p class="lead" ALIGN=center>You are welcome to try out our new site to host every file for free</p>
+  <% if session[:user_id] == nil %>
+    <p ALIGN=center><a class="btn btn-lg btn-success" href="/users/new" role="button">SIGN UP</a>
+    &nbsp&nbsp&nbsp&nbsp or &nbsp&nbsp&nbsp&nbsp
+    <a class="btn btn-lg btn-success" href="/sessions/new" role="button">SIGN IN</a></p>
+  <% else %>
+    <p ALIGN=center><a class="btn btn-lg btn-success" href="/uploads" role="button">Ver archivos</a></p>
+  <% end %>
+</div>
 
-
-  <div class="jumbotron">
-        <h1 ALIGN=center>Welcome to MINIUPLOAD</h1>
-        <p class="lead" ALIGN=center>You are welcome to try out our new site to host every file for free</p>
-    <p ALIGN=center><a class="btn btn-lg btn-success" href="/users/new" role="button">SIGN UP</a></p>
-      </div>
-
- <!-- Example row of columns -->
-      <div class="row">
-        <div align=center class="col-lg-4">
-          <h2>Take a LOOK</h2>
-          <p>Feel free to check out the file that have been uploaded recently </p>
-          <p><a class="btn btn-primary" href="/uploads" role="button">GO to Files! &raquo;</a></p>
-        </div>
-        <div  align=center class="col-lg-4">
-          <h2>Our Mission</h2>
-          <p>Our priority is to bring a cool place where you... </p>
-          <p><a class="btn btn-primary" href="http://miniupload.herokuapp.com/" role="button">Read more... &raquo;</a></p>
-       </div>
-        <div align=center class="col-lg-4">
-          <h2>Help us</h2>
-          <p>We need you to keep improving.</p>
-          <p>Tell us what we can do to help you feel more comfortable with this site.</p>
-          <p><a class="btn btn-primary" href="http://miniupload.herokuapp.com/" role="button">Suggest... &raquo;</a></p>
-        </div>
-      </div>
- 
+<div class="row">
+  <div align=center class="col-lg-4">
+  </div>
+  <div align=center class="col-lg-4">
+    <h2>Who are we?</h2>
+    <p>...</p>
+    <p><a class="btn btn-primary" href="/welcome/somos.pdf" role="button">Meet Us... &raquo;</a></p>
+   <!-- <a href="http://crisnoel.comyr.com/publi/taller.pdf" onclick="window.open('somos.pdf')" <span>Nosotros</span></a> -->
+  </div>
+  <div align=center class="col-lg-4">
+  </div>
+</div>

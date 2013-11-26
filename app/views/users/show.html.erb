@@ -1,3 +1,5 @@
+<div class="jumbotron">
+  <h1 ALIGN=center>User's Info</h1><br>
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -9,11 +11,11 @@
   <strong>Email:</strong>
   <%= @user.email %>
 </p>
-
 <p>
-  <strong>Password:</strong>
-  <%= @user.password %>
+  <strong>Member since:</strong>
+  <%= @user.created_at %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
+</div>
